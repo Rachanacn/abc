@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vehical *.css
+recursive-include vehical *.csv
+recursive-include vehical *.html
+recursive-include vehical *.ico
+recursive-include vehical *.js
+recursive-include vehical *.json
+recursive-include vehical *.md
+recursive-include vehical *.png
+recursive-include vehical *.py
+recursive-include vehical *.svg
+recursive-include vehical *.txt
+recursive-exclude vehical *.pyc
