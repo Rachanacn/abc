@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "VP-.YYYY.-.#####",
+ "creation": "2023-01-18 12:30:20.829155",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_no",
+  "vehicle_type",
+  "slot_no",
+  "column_break_3",
+  "date",
+  "from_time",
+  "to_time",
+  "total_time",
+  "section_break_7",
+  "penalty",
+  "amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vehicle no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slot_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": " Parking Slot no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From time",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "description": "Fine of Rs.10 will be charged for extended time.",
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To time"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "2 Wheeler =10rs.\n                                                                                                                                            \n\n\n4 Wheeler =30rs.",
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Parking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "label": "Vehicle Type",
+   "options": "2 wheeler\n4 wheeler",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "penalty",
+   "fieldtype": "Data",
+   "label": "Penalty"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_time",
+   "fieldtype": "Time",
+   "label": "Total time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-20 15:56:39.900592",
+ "modified_by": "Administrator",
+ "module": "vehical",
+ "name": "Vehicle Parking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

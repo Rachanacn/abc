@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:food",
+ "creation": "2023-01-31 14:31:08.304584",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "food",
+  "price"
+ ],
+ "fields": [
+  {
+   "fieldname": "food",
+   "fieldtype": "Data",
+   "label": "Food",
+   "unique": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Float",
+   "label": "Price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-31 16:22:41.586485",
+ "modified_by": "Administrator",
+ "module": "vehical",
+ "name": "Food Price",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "food",
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

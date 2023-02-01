@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:vehicle",
+ "creation": "2023-01-05 12:36:21.954710",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "vehicle",
+  "column_break_5",
+  "mileage",
+  "odometer_value",
+  "kilometers_pending",
+  "section_break_6",
+  "refueling_details",
+  "section_break_9",
+  "total_amount_spend",
+  "column_break_11",
+  "fuel_available_in_vehicle",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "vehicle.last_odometer",
+   "fieldname": "odometer_value",
+   "fieldtype": "Data",
+   "label": "Odometer Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.mileage",
+   "fieldname": "mileage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Mileage",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "kilometers_pending",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kilometers Pending",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Configuration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "refueling_details",
+   "fieldtype": "Table",
+   "label": "Refueling Details",
+   "options": "Refueling Details"
+  },
+  {
+   "fieldname": "total_amount_spend",
+   "fieldtype": "Currency",
+   "label": "Total Amount Spend",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_available_in_vehicle",
+   "fieldtype": "Data",
+   "label": "Fuel Available in Vehicle",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-07 09:56:17.559545",
+ "modified_by": "Administrator",
+ "module": "vehical",
+ "name": "Vehicle Configuration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
